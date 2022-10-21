@@ -10,16 +10,15 @@ def RandomVel():
 
 
 N = 70  # number of ants
-'''We start with initially zero pheromones and the then each ant lays the pheromones'''
-M = 1
+'''We start with some initial pheromones'''
+M = 10
 
 sa = 0.05  # size of ants
 speed = 2  # speed of ants
 size = 0.2*sa  # size of the pheromone representation
-T_e = 150  # meantime of evaporation
+T_e = 6  # Time of evaporation
 
-'''------------------------------------------------'''
-
+'''------------Canvas Configuration-------------------'''
 xl = -7.11111111
 xr = 7.1037037
 yu = 4
@@ -28,18 +27,20 @@ resx = int(1080/(sa*50))
 resy = int(1920/(sa*50))
 del_x = (xr-xl)/resx
 del_y = (yu-yd)/resy
-Env = np.zeros((resx, resy), dtype=int)
+Env = np.zeros((resx, resy), dtype=int)    #Environment matrix that sort of keeps track of pheromone density
 
 '''-----------------------------------------------'''
 
 PoissonWandering = 0.03  # Exploratory part of ant motion. Ranges from 0 to 1
 GaussVariance = 0.01
 GaussMean = 0
-Theta = np.pi / 2  # Defining the range of sight by R and Theta ... Detecting a pheromone particle
 
+# Defining the range of vision by R and Theta ... Detecting a pheromone particle
+
+Theta = np.pi / 2 
 R = 15 * sa
 r = np.linspace(0, R, int(R * 50))
-lam_r = 0.4*speed  # Deposition rate
+lam_r = 0.4*speed  # Pheromone deposition rate
 lam_t = 1 # Trail recruitment rate
 
 '''-------------------------------------------------'''

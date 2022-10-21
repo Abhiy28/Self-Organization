@@ -1,5 +1,4 @@
 # Trail formation in ants by pheromone deposition
 
-
-https://user-images.githubusercontent.com/76469594/197138154-9d7b8845-9086-4ebc-9139-19c3dad38580.mp4
+https://user-images.githubusercontent.com/76469594/197138410-42dc0e20-df43-46f3-a4fb-6e1c7d6000ff.mp4
 

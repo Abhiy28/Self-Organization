@@ -1,3 +1,4 @@
 # Flocking in 3 speices with non-reciprocal interactions
 
-https://user-images.githubusercontent.com/76469594/197138410-42dc0e20-df43-46f3-a4fb-6e1c7d6000ff.mp4
+https://github.com/user-attachments/assets/7162d915-16af-4d82-baea-595b311b5eb6
+
